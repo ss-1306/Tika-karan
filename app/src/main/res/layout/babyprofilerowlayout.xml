@@ -1,0 +1,73 @@
+<android.support.v7.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="3.5dp"
+    app:cardBackgroundColor="#FFFFFF"
+    android:layout_marginBottom="4dp"
+    app:cardElevation="20dp"
+    android:layout_marginLeft="20dp"
+    android:layout_marginRight="20dp"
+    android:padding="10dp"
+    android:theme="@style/MyEditTextTheme"
+    android:id="@+id/DosingRegimen"
+    android:visibility="visible"
+    android:layout_below="@+id/tinputlayout"
+    android:layout_centerHorizontal="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="65dp"
+        android:orientation="horizontal"
+        android:weightSum="100"
+        android:layout_gravity="center_horizontal">
+
+        <ImageView
+            android:layout_weight="50"
+            android:id="@+id/ImageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_gravity="center|top"
+            android:src="@drawable/babyimage"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Name"
+            android:layout_weight="30"
+            android:id="@+id/BabyName"
+            android:textSize="18sp"
+            android:textColor="#1c3f95"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/daily" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Date of Birth"
+            android:layout_weight="20"
+            android:id="@+id/Dateofbirth"
+            android:textSize="18sp"
+            android:textColor="#1c3f95"
+            android:padding="10dp"
+            android:textAlignment="viewEnd"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_toLeftOf="@+id/daily" />
+
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

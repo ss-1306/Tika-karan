@@ -1,0 +1,64 @@
+<resources>
+    <string name="app_name">"Tika Karan"</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="forgot_pass">Forgot password? <a href="#">Reset Here</a></string>
+    <string name="sign_in">Sign In</string>
+    <string name="signin_text">Already have an Account? <a href="#">Sign In</a></string>
+    <string name="register">Register</string>
+
+    <string name="facebook_login">Login with Facebook</string>
+    <string name="facebook_app_id">481048092067805</string>
+    <string name="drawer_open">Drawer open</string>
+    <string name="drawer_close">Drawer close</string>
+    <string name="forgot_text">Enter your Registered Mobile Number and New Password</string>
+    <string name="enter_fname">Enter Firstname</string>
+    <string name="enter_lname">Enter Lastname</string>
+    <string name="enter_phone">Enter Phone No.</string>
+    <string name="invalid_phone_number">Enter valid Phone number</string>
+    <string name="phone_pattern">([\\d]{10})</string>
+    <string name="enter_dob">DOB is Required</string>
+    <string name="enter_pin">Enter Pin</string>
+    <string name="pin_pattern">([\\d]{4})</string>
+    <string name="invalid_pin_number">Pin must be atleast 4 digit</string>
+    <string name="confirm_pin">Confirm Pin</string>
+    <string name="password_does_not_match">Pin does not match</string>
+    <string name="search">Search</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_line1">Address is Required</string>
+    <string name="enter_city">Enter city</string>
+    <string name="enter_country">Enter country</string>
+    <string name="enter_pincode">Enter pincode</string>
+
+    <string name="title_activity_coach_marks">CoachMarks</string>
+
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello Food!</string>
+    <string name="slide_1_desc">The easiest way to order food from your favourite restaurant!</string>
+
+    <string name="slide_2_title">Movie Tickets</string>
+    <string name="slide_2_desc">Book movie tickets for your family and friends!</string>
+
+    <string name="slide_3_title">Great Discounts</string>
+    <string name="slide_3_desc">Best discounts on every single service we offer!</string>
+
+    <string name="slide_4_title">World Travel</string>
+    <string name="slide_4_desc">Book tickets of any transportation and travel the world!</string>
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="title_activity_vaccination_schedule">VaccinationSchedule</string>
+    <string name="title_activity_baby_profile_edit">BabyProfileEditActivity</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

@@ -1,0 +1,310 @@
+
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="#f9f9f9"
+    >
+    <include
+        android:id="@+id/app_bar"
+        layout="@layout/app_bar" />
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/placeholder">
+
+        </FrameLayout>
+            <ScrollView
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+
+
+                <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="200dp"
+                        android:layout_height="150dp"
+                        android:layout_alignParentLeft="true"
+                        android:layout_alignParentStart="true"
+                        android:layout_alignParentTop="true"
+                        android:layout_gravity="center|top"
+                        android:src="@drawable/addimage"
+                        android:padding="10dp"
+                        />
+
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/twenty"
+                        android:layout_marginRight="@dimen/twenty"
+                        android:layout_marginTop="@dimen/twenty"
+                        android:visibility="gone"
+                        android:text="Treatment Name" />
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="68dp">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="320dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginTop="22dp"
+                            android:layout_height="wrap_content"
+                            android:visibility="visible"
+                            android:id="@+id/view4">
+
+                            <EditText
+                                android:id="@+id/tret_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:theme="@style/MyEditTextTheme"
+                                android:layout_marginRight="@dimen/twenty"
+                                android:layout_marginTop="5dp"
+                                android:hint="Name"
+                                android:textSize="15sp"
+                                android:padding="10sp"/>
+
+
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:src="@drawable/treaticon4"
+
+                            android:layout_marginLeft="24dp"
+                            android:layout_height="30dp"
+                            android:layout_alignBottom="@+id/view4"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+                            android:layout_marginStart="24dp" />
+
+                     </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/NameLayout">
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="320dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_height="wrap_content">
+                            <EditText
+                                android:id="@+id/Doctor_name"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:theme="@style/MyEditTextTheme"
+                                android:layout_marginRight="@dimen/twenty"
+                                android:layout_marginTop="@dimen/twelve"
+                                android:hint="Doctor's Name ( Optional )"
+                                android:textSize="15sp"
+                                android:padding="10sp" />
+                        </android.support.design.widget.TextInputLayout>
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_marginLeft="23dp"
+                            android:src="@drawable/doctoricon3"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                     </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:id="@+id/NumberLayout"
+                        android:layout_height="match_parent">
+
+                        <android.support.design.widget.TextInputLayout
+                            android:layout_width="320dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true">
+
+                            <EditText
+                                android:id="@+id/Doctor_number"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:maxLength="10"
+                                android:layout_marginLeft="@dimen/twenty"
+                                android:theme="@style/MyEditTextTheme"
+                                android:layout_marginRight="@dimen/twenty"
+                                android:layout_marginTop="@dimen/twelve"
+                                android:hint="Doctor's contact number ( Optional )"
+                                android:textSize="15sp"
+                                android:inputType="number"
+                                android:padding="10sp" />
+
+                        </android.support.design.widget.TextInputLayout>
+
+
+
+                        <ImageView
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="30dp"
+                            android:src="@drawable/phoneicon"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:weightSum="1"
+                        android:paddingLeft="15dp"
+                        android:orientation="horizontal"
+                        android:layout_gravity="center_horizontal">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Date of birth"
+                            android:layout_weight="0.43"
+                            android:layout_marginTop="@dimen/twelve"
+                            />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Gender"
+                            android:layout_weight="0.5"
+                            android:layout_marginTop="@dimen/twelve"
+                            />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:paddingLeft="15dp"
+                        android:weightSum="1"
+                        >
+                        <EditText
+                            android:hint="Enter DOB\n DD/MM/YYYY"
+                            android:id="@+id/dob"
+                            android:layout_width="136dp"
+                            android:layout_weight="0.5"
+                            android:layout_height="wrap_content" />
+
+
+                        <RadioGroup
+                            android:layout_width="149dp"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="25dp"
+                            android:layout_marginLeft="50dp"
+                            android:layout_weight="0.5">
+
+                            <RadioButton
+                                android:text="Female"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/female"
+                                android:layout_weight="1" />
+                            <RadioButton
+                                android:text="Male"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/male"
+                                android:layout_weight="1" />
+                        </RadioGroup>
+                    </LinearLayout>
+
+                    <ProgressBar
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:visibility="gone"/>
+
+                    <LinearLayout
+                        android:id="@+id/treatment_layout"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="2dp"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginRight="2dp"
+                        android:orientation="vertical">
+
+
+
+
+                    </LinearLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+
+                    </RelativeLayout>
+
+                    <android.support.v7.widget.CardView
+                        android:layout_width="340dp"
+                        android:layout_height="wrap_content"
+                        app:cardBackgroundColor="#fa7921"
+                        android:layout_marginBottom="7dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_gravity="center"
+                        app:cardCornerRadius="5dp"
+                        app:cardElevation="6dp"
+                        android:weightSum="1"
+                        android:id="@+id/cardview_proceed">
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_alignParentTop="true"
+                            android:background="@drawable/button_pressed_selected"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true"
+
+
+                            android:layout_weight="3.48">
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:background="#1c3f95"
+                                android:text="Proceed"
+                                android:foreground="?android:attr/selectableItemBackground"
+                                android:textStyle="bold"
+                                android:textSize="16sp"
+                                android:gravity="center"
+                                android:textColor="#FFFFFF"
+                                android:onClick="proceed"
+                                android:layout_alignParentTop="true"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:id="@+id/treat_done"
+                                android:layout_alignParentBottom="true" />
+                        </RelativeLayout>
+                    </android.support.v7.widget.CardView>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+
+
+
+
+</LinearLayout>
+
+
+
